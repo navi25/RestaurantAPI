@@ -17,8 +17,9 @@ class FoodModel(db.Model):
     restaurant_id = db.Column(db.Integer, db.ForeignKey('restaurants.id', ondelete='CASCADE'), nullable=False)
     restaurant = db.relationship('RestaurantModel', backref=db.backref('foods', lazy='dynamic' ))
 
-    def __init__(self, comment, restaurant_id):
-        self.comment = comment
+    def __init__(self, name, description, restaurant_id):
+        self.name = name
+        self.description = description
         self.restaurant_id = restaurant_id
 
 

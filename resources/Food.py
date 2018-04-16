@@ -19,13 +19,13 @@ class FoodResource(Resource):
         data, errors = food_schema.load(json_data)
         if errors:
             return {"status": "error", "data": errors}, 422
-        restaurant_id = FoodModel.query.filter_by(id=data['restaurant_id']).first()
+        restaurant_id = RestaurantModel.query.filter_by(id=data['restaurant_id']).first()
         if not restaurant_id:
             return {'status': 'error', 'message': 'food Restaurant not found'}, 400
         food = FoodModel(
-            restaurant_id=data['restaurant_id'],
-            name=data['name'],
-            description = data['description']
+            restaurant_id=json_data['restaurant_id'],
+            name=json_data['name'],
+            description = json_data['description']
             )
         db.session.add(food)
         db.session.commit()
