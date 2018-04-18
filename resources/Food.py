@@ -33,3 +33,11 @@ class FoodResource(Resource):
         result = food_schema.dump(food).data
 
         return {'status': "success", 'data': result}, 201
+
+
+class FoodItemResource(Resource):
+
+    def get(self, id):
+        food = FoodModel.query.filter_by(id=id)
+        food = foods_schema.dump(food).data
+        return {'status': 'success', 'data': food}, 200

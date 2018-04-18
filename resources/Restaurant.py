@@ -45,7 +45,7 @@ class RestaurantResource(Resource):
             return errors, 422
         restaurant = RestaurantModel.query.filter_by(id=data['id']).first()
         if not restaurant:
-            return {'message': 'Category does not exist'}, 400
+            return {'message': 'Restaurant do not exist'}, 400
         restaurant.name = data['name']
         db.session.commit()
 
@@ -64,7 +64,6 @@ class RestaurantResource(Resource):
             return errors, 422
         category = RestaurantSchema.query.filter_by(id=data['id']).delete()
         db.session.commit()
-
         result = restaurant_schema.dump(category).data
 
         return { "status": 'success', 'data': result}, 204
@@ -73,4 +72,7 @@ class RestaurantResource(Resource):
 class RestaurantItemResource(Resource):
 
     def get(self, id):
-        return RestaurantModel.query.filter(RestaurantModel.id == id).one()
+        restaurant = RestaurantModel.query.filter_by(id=id)
+        restaurant = restaurants_schema.dump(restaurant).data
+        return {'status': 'success', 'data': restaurant}, 200
+
