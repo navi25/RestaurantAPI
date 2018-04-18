@@ -68,3 +68,9 @@ class RestaurantResource(Resource):
         result = restaurant_schema.dump(category).data
 
         return { "status": 'success', 'data': result}, 204
+
+
+class RestaurantItemResource(Resource):
+
+    def get(self, id):
+        return RestaurantModel.query.filter(RestaurantModel.id == id).one()
