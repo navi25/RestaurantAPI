@@ -77,3 +77,4 @@ class RestaurantItemResource(Resource):
         restaurant = restaurants_schema.dump(restaurant).data
         return {'status': 'success', 'data': restaurant}, 200
 
+

@@ -41,3 +41,18 @@ class FoodItemResource(Resource):
         food = FoodModel.query.filter_by(id=id)
         food = foods_schema.dump(food).data
         return {'status': 'success', 'data': food}, 200
+
+class RestaurantFoodResource(Resource):
+
+    def get(self, id):
+        food = FoodModel.query.filter_by(restaurant_id=id)
+        food = foods_schema.dump(food).data
+        return {'status': 'success', 'data': food}, 200
+
+class RestaurantFoodItemResource(Resource):
+
+    def get(self, id, foodId):
+        food = FoodModel.query.filter_by(restaurant_id=id)
+        # foodItem = food.query.filye
+        food = foods_schema.dump(food).data
+        return {'status': 'success', 'data': food}, 200
