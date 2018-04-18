@@ -5,6 +5,7 @@ from model import db, RestaurantModel, RestaurantSchema
 restaurants_schema = RestaurantSchema(many=True)
 restaurant_schema = RestaurantSchema()
 
+
 class RestaurantResource(Resource):
     def get(self):
         restaurants = RestaurantModel.query.all()

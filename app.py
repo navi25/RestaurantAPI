@@ -10,3 +10,6 @@ api = Api(api_bp)
 api.add_resource(RestaurantResource, '/restaurants')
 api.add_resource(RestaurantItemResource, '/restaurants/', '/restaurants/<int:id>', endpoint='id')
 api.add_resource(FoodResource,'/foods')
+
+
+
