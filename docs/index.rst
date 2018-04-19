@@ -103,15 +103,15 @@ Additional endpoints
 Tech stack
 ----------
 
-- Flask - Web Microframework for Python
-- Flask-restful - Extension for flask for quickly building REST APIs
-- Swagger - Automatic Documentation for the REST endpoints
-- Flask-migrate - An extension that handles SQLAlchemy database migrations for Flask applications using Alembic.
-- Marshmallow - A serializer and deserializer framework for converting complex data types, such as objects to and from native Python data types.
-- Flask-sqlalchemy - This is an extension of flask that add supports for SQLAlchemy
-- Flask-marshmallow - An integration layer for flask and marshmallow.
-- Marshmallow-sqlalchemy - This adds additional features to marshmallow.
-- Sqlite3 - Database for the project. It comes built in with python.
+- `Flask <http://flask.pocoo.org/>`_ - Web Microframework for Python
+- `Flask-restful <https://flask-restful.readthedocs.io/en/latest/>`_ - Extension for flask for quickly building REST APIs
+- `Swagger <https://swagger.io/>`_ - Automatic Documentation for the REST endpoints
+- `Flask-migrate <https://flask-migrate.readthedocs.io/en/latest/>`_ - An extension that handles SQLAlchemy database migrations for Flask applications using Alembic.
+- `Marshmallow <https://marshmallow.readthedocs.io>`_ - A serializer and deserializer framework for converting complex data types, such as objects to and from native Python data types.
+- `Flask-sqlalchemy <http://flask-sqlalchemy.pocoo.org/>`_ - This is an extension of flask that add supports for SQLAlchemy
+- `Flask-marshmallow <https://flask-marshmallow.readthedocs.io/en/latest/>`_ - An integration layer for flask and marshmallow.
+- `Marshmallow-sqlalchemy <https://marshmallow-sqlalchemy.readthedocs.io/en/latest/>`_ - This adds additional features to marshmallow.
+- `Sqlite3 <https://www.sqlite.org/index.html>`_ - Database for the project. It comes built in with python.
 
 Development Thought process
 ---------------------------
