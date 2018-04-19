@@ -24,8 +24,7 @@ class MenuResource(Resource):
             return {'status': 'error', 'message': 'food Restaurant not found'}, 400
         menu = MenuModel(
             restaurant_id=json_data['restaurant_id'],
-            name=json_data['name'],
-            description = json_data['description']
+            name=json_data['name']
             )
         db.session.add(menu)
         db.session.commit()
