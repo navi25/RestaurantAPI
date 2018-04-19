@@ -23,6 +23,7 @@ class FoodResource(Resource):
         if not restaurant_id:
             return {'status': 'error', 'message': 'food Restaurant not found'}, 400
         food = FoodModel(
+            menu_id=json_data['menu_id'],
             restaurant_id=json_data['restaurant_id'],
             name=json_data['name'],
             description = json_data['description']
@@ -52,7 +53,21 @@ class RestaurantFoodResource(Resource):
 class RestaurantFoodItemResource(Resource):
 
     def get(self, id, foodId):
-        food = FoodModel.query.filter_by(restaurant_id=id)
+        food = FoodModel.query.filter_by(restaurant_id=id).filter_by(id=foodId)
         # foodItem = food.query.filye
+        food = foods_schema.dump(food).data
+        return {'status': 'success', 'data': food}, 200
+
+class MenuFoodResource(Resource):
+
+    def get(self, id):
+        food = FoodModel.query.filter_by(menu_id=id)
+        food = foods_schema.dump(food).data
+        return {'status': 'success', 'data': food}, 200
+
+class MenuFoodItemResource(Resource):
+
+    def get(self, id, foodId):
+        food = FoodModel.query.filter_by(menu_id=id).filter_by(id=foodId)
         food = foods_schema.dump(food).data
         return {'status': 'success', 'data': food}, 200
