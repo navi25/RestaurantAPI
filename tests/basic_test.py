@@ -2,15 +2,11 @@ import os,sys
 sys.path.append('../') #To allow lookup in parent directory too (Solving the python's infamous ModuleNotFound Exception :D)
 
 import unittest
-
-from run import app as flask_app
-from flask_sqlalchemy import SQLAlchemy
-from model import db
 from urllib import response as rs, request as rq
-from flask import Flask
 from flask_testing import LiveServerTestCase
 from run import create_app
 from model import db
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class TestBaseCase(LiveServerTestCase):
