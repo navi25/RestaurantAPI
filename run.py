@@ -1,7 +1,7 @@
 from flask import Flask, redirect, render_template
 from app import api_bp
 from model import db, redis_cache
-from config import DevelopmentConfig, TestingConfig
+from config import DevelopmentConfig, TestingConfig, BaseConfig
 
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ def create_app(config_filename):
     if config_filename != TestingConfig:
         print("config is not Testing config so initiating db here")
         db.init_app(app)
-        # redis_cache.init_app(app)
+        redis_cache.init_app(app)
     return app
 
 @app.route('/')
@@ -28,5 +28,5 @@ def availableApps():
 
 
 if __name__ == "__main__":
-    app = create_app(DevelopmentConfig)
+    app = create_app(BaseConfig)
     app.run(debug=True)

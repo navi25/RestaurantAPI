@@ -20,6 +20,7 @@ class TestRestaurantCase(LiveServerTestCase):
         self.client = self.app.test_client()
         with self.app.app_context():
             db.init_app(self.app)
+            redis_cache.init_app(self.app)
             db.create_all()
             db.session.commit()
         return self.app
