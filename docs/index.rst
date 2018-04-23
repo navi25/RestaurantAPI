@@ -37,6 +37,12 @@ How to Run the App?
 
 Everything should be ready. In your browser open http://127.0.0.1:5000/
 
+Since Redis-Server is used for database optimisation
+After running the app, type in following in terminal to establish
+redis-connection
+
+- redis-server
+
 REST Endpoints
 --------------
 
@@ -122,6 +128,11 @@ Tech stack
 - `Flask-marshmallow <https://flask-marshmallow.readthedocs.io/en/latest/>`_ - An integration layer for flask and marshmallow.
 - `Marshmallow-sqlalchemy <https://marshmallow-sqlalchemy.readthedocs.io/en/latest/>`_ - This adds additional features to marshmallow.
 - `Sqlite3 <https://www.sqlite.org/index.html>`_ - Database for the project. It comes built in with python.
+-   `RedisDB <https://redis.io/>`_ - Key-Value based No-SQL DB to oprimize relational
+database by improving Read by caching data efficiently.
+-   `Flask-Redis <https://github.com/underyx/flask-redis>`_ - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
+    to easliy used Redis with Python and Flask easily.
+
 
 Development Thought process
 ---------------------------
@@ -129,4 +140,5 @@ Development Thought process
 - Documentation is hard, hence used an automatic document generating tool – Swagger to ease out the process.
 - Test driven development is useful and leads to less errors in later stages of development.
 - Dependency injection helps a lot in Test driven development and also in making the project more modular and flexible. Though couldn’t use in the current project but would surely update the project using flask-injector.
+- RedisDB is used as caching layer to improve read efficiency.
 - Used Flask because it’s flexible and can be plugged with all the necessary modules on the go.

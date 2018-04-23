@@ -31,6 +31,12 @@ How to Run the App?
 Everything should be ready. In your browser open
 <http://127.0.0.1:5000/>
 
+Since Redis-Server is used for database optimisation
+After running the app, type in following in terminal to establish
+redis-connection
+
+- redis-server
+
 REST Endpoints
 --------------
 
@@ -135,6 +141,10 @@ Tech stack
 -   [Marshmallow-sqlalchemy](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/) - This adds additional features to marshmallow.
 -   [Sqlite3](https://www.sqlite.org/index.html) - Database for the
     project. It comes built in with python.
+-   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to oprimize relational
+database by improving Read by caching data efficiently.
+-   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
+    to easliy used Redis with Python and Flask easily.
 
 Development Thought process
 ---------------------------
@@ -148,6 +158,8 @@ Development Thought process
     in making the project more modular and flexible. Though couldn’t use
     in the current project but would surely update the project using
     flask-injector.
+-   RedisDB is used as caching layer to improve read efficiency.
 -   Used Flask because it’s flexible and can be plugged with all the
     necessary modules on the go.
+
 
