@@ -1,5 +1,9 @@
 import unittest
 
+import config
+
+config.PresentConfig = config.TestingConfig
+
 testmodules = [
     'basic_test',
     'FoodTest',

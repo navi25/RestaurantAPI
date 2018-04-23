@@ -8,7 +8,7 @@ from run import create_app
 import model
 from model import db, redis_cache
 import json
-from config import TestingConfig
+from config import PresentConfig
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -17,7 +17,7 @@ class TestFoodCase(LiveServerTestCase):
     render_templates = False
 
     def create_app(self):
-        self.app = create_app(TestingConfig)
+        self.app = create_app(PresentConfig)
         self.client = self.app.test_client()
         with self.app.app_context():
             db.init_app(self.app)

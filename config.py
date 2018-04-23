@@ -15,3 +15,6 @@ class TestingConfig(BaseConfig):
 
 class ProductionConfig(BaseConfig):
     SQLALCHEMY_DATABASE_URI = "sqlite:///base.db"
+
+
+PresentConfig = BaseConfig
