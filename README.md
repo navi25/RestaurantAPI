@@ -77,6 +77,17 @@ follows:-
         -   **Delete** : This method deletes the given menu if the
             *food\_id* exists.
 
+Unit Testing Endpoints
+----------------------
+
+The Tests for all the modules are located in **tests** directory and can be fired
+in two ways:-
+- Individually by running their individual test modules
+- All at once by running TestAll module which look for all the available modules
+in the directory and fires the test cases one by one.
+
+The [Flask's Unittest modules](http://flask.pocoo.org/docs/0.12/testing/) were used for developing the testcases.
+
 Additional endpoints
 --------------------
 

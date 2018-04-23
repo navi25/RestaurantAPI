@@ -99,6 +99,16 @@ Additional endpoints
 
    Returns the particular menu with id = menu_id in the particular restaurant with id = id if it exists.
 
+Unit Testing Endpoints
+----------------------
+
+The Tests for all the modules are located in **tests** directory and can be fired
+in two ways:-
+
+- Individually by running their individual test modules
+- All at once by running **TestAll** module which look for all the available modules in the directory and fires the test cases one by one.
+
+The `Flask's Unittest modules <http://flask.pocoo.org/docs/0.12/testing/>`_ were used for developing the testcases.
 
 Tech stack
 ----------
