@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'restaurantAPI_docs'
+project = 'RestaurantAPI'
 copyright = '2018, Navendra Jha'
 author = 'Navendra Jha'
 
@@ -146,7 +146,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'restaurantapi_docs', 'restaurantAPI_docs Documentation',
+    (master_doc, 'RestaurantAPI', 'RestaurantAPI Documentation',
      [author], 1)
 ]
 
@@ -157,7 +157,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'restaurantAPI_docs', 'restaurantAPI_docs Documentation',
-     author, 'restaurantAPI_docs', 'One line description of project.',
+    (master_doc, 'RestaurantAPI', 'RestaurantAPI Documentation',
+     author, 'RestaurantAPI', 'Online Restaurant API system using flask, flask-restful, sqlalchemy, marshmallow',
      'Miscellaneous'),
 ]
