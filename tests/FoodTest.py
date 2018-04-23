@@ -5,6 +5,7 @@ import unittest
 from urllib import response as rs, request as rq
 from flask_testing import LiveServerTestCase
 from run import create_app
+import model
 from model import db
 import json
 

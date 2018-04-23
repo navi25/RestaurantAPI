@@ -21,12 +21,14 @@ class TestRestaurantCase(LiveServerTestCase):
         return self.app
 
     def setUp(self):
-        db.init_app(self.app)
-        db.create_all()
+        with self.app.app_context():
+            db.init_app(self.app)
+            db.create_all()
 
     def tearDown(self):
-        db.session.remove()
-        db.drop_all()
+        with self.app.app_context():
+            db.session.remove()
+            db.drop_all()
 
     def test_endPoint(self):
         response = rq.urlopen(self.get_server_url() + "/api/v1.0/menus")

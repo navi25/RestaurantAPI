@@ -1,6 +1,7 @@
 from flask import Flask, redirect, render_template
 from app import api_bp
 from model import db
+from config import DevelopmentConfig, TestingConfig
 
 app = Flask(__name__)
 
@@ -11,7 +12,9 @@ def create_app(config_filename):
     if t == 0:
         app.register_blueprint(api_bp, url_prefix='/api/v1.0')
         t = 1
-    db.init_app(app)
+    if config_filename != TestingConfig:
+        print("config is not Testing confid so initiating db here")
+        db.init_app(app)
     return app
 
 @app.route('/')
@@ -20,9 +23,7 @@ def create_app(config_filename):
 def availableApps():
     return render_template('availableApp.html')
 
-# create_app("config")
-# app.run(debug=True)
 
 if __name__ == "__main__":
-    app = create_app("config")
+    app = create_app(DevelopmentConfig)
     app.run(debug=True)

@@ -63,9 +63,9 @@ class RestaurantResource(Resource):
         data, errors = restaurant_schema.load(json_data)
         if errors:
             return errors, 422
-        category = RestaurantSchema.query.filter_by(id=data['id']).delete()
+        restaurant = RestaurantModel.query.filter_by(id=data['id']).delete()
         db.session.commit()
-        result = restaurant_schema.dump(category).data
+        result = restaurant_schema.dump(restaurant).data
 
         return { "status": 'success', 'data': result}, 204
 
