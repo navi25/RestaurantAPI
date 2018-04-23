@@ -1,6 +1,7 @@
 from flask import request
 from flask_restful import Resource
-from model import db, RestaurantModel, RestaurantSchema
+from model import db, redis_cache, RestaurantModel, RestaurantSchema
+from Constants import RESTAURANT_LIST
 
 restaurants_schema = RestaurantSchema(many=True)
 restaurant_schema = RestaurantSchema()
@@ -8,7 +9,11 @@ restaurant_schema = RestaurantSchema()
 
 class RestaurantResource(Resource):
     def get(self):
-        restaurants = RestaurantModel.query.all()
+        if redis_cache.exists(RESTAURANT_LIST) == True:
+            restaurants = redis_cache.__getitem__(RESTAURANT_LIST)
+        else:
+            restaurants = RestaurantModel.query.all()
+            redis_cache.__setitem__(RESTAURANT_LIST,restaurants)
         restaurants = restaurants_schema.dump(restaurants).data
         return {'status': 'success', 'data': restaurants}, 200
 

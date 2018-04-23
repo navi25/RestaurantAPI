@@ -1,0 +1,1 @@
+RESTAURANT_LIST = "restaurantsList"

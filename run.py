@@ -1,7 +1,8 @@
 from flask import Flask, redirect, render_template
 from app import api_bp
-from model import db
+from model import db, redis_cache
 from config import DevelopmentConfig, TestingConfig
+
 
 app = Flask(__name__)
 
@@ -13,14 +14,16 @@ def create_app(config_filename):
         app.register_blueprint(api_bp, url_prefix='/api/v1.0')
         t = 1
     if config_filename != TestingConfig:
-        print("config is not Testing confid so initiating db here")
+        print("config is not Testing config so initiating db here")
         db.init_app(app)
+        # redis_cache.init_app(app)
     return app
 
 @app.route('/')
 @app.route('/api/')
 @app.route('/api/v1.0/')
 def availableApps():
+
     return render_template('availableApp.html')
 
 
