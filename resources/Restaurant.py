@@ -1,15 +1,29 @@
 from flask import request
 from flask_restful import Resource
-from model import db, RestaurantModel, RestaurantSchema
-
+from model import db, redis_cache, RestaurantModel, RestaurantSchema
+from Constants import RESTAURANT_LIST
+import json
 restaurants_schema = RestaurantSchema(many=True)
 restaurant_schema = RestaurantSchema()
+from ast import literal_eval
 
+TAG = "Restaurant"
 
 class RestaurantResource(Resource):
+    def __init__(self):
+        self.tag = "RestaurantResource"
+
     def get(self):
-        restaurants = RestaurantModel.query.all()
-        restaurants = restaurants_schema.dump(restaurants).data
+        if redis_cache.exists(RESTAURANT_LIST):
+            print("[%s.%s]Getting Restaurant Data from redis Cache"%(TAG,self.tag))
+            restaurants = redis_cache.__getitem__(RESTAURANT_LIST)
+            restaurants = literal_eval(restaurants.decode('utf8'))
+        else:
+            print("[%s.%s]Getting Restaurant Data from sqlite db"%(TAG,self.tag))
+            restaurants = RestaurantModel.query.all()
+            restaurants = restaurants_schema.dump(restaurants).data
+            redis_cache.__setitem__(RESTAURANT_LIST,restaurants)
+
         return {'status': 'success', 'data': restaurants}, 200
 
 

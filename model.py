@@ -2,11 +2,11 @@ from flask import Flask
 from marshmallow import Schema, fields, pre_load, validate
 from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_redis import FlaskRedis
 
 ma = Marshmallow()
 db = SQLAlchemy()
-
+redis_cache = FlaskRedis()
 
 class FoodModel(db.Model):
     __tablename__ = 'foods'

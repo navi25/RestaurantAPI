@@ -1,14 +1,28 @@
 from flask import jsonify, request
 from flask_restful import Resource
-from model import db, FoodModel, RestaurantModel, FoodSchema
-
+from model import db, redis_cache, FoodModel, RestaurantModel, FoodSchema
+from Constants import FOOD_LIST
+from ast import literal_eval
+TAG = "Food"
 foods_schema = FoodSchema(many=True)
 food_schema = FoodSchema()
 
+
 class FoodResource(Resource):
+    def __init__(self):
+        self.tag = "FoodResource"
+
     def get(self):
-        foods = FoodModel.query.all()
-        foods = foods_schema.dump(foods).data
+        if redis_cache.exists(FOOD_LIST):
+            print("[%s.%s]Getting Food Data from redis Cache"%(TAG,self.tag))
+            foods = redis_cache.__getitem__(FOOD_LIST)
+            foods = literal_eval(foods.decode('utf8'))
+        else:
+            print("[%s.%s]Getting Food Data from sqlite db"%(TAG,self.tag))
+            foods = FoodModel.query.all()
+            foods = foods_schema.dump(foods).data
+            redis_cache.__setitem__(FOOD_LIST,foods)
+
         return {"status":"success", "data":foods}, 200
 
     def post(self):

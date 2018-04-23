@@ -6,7 +6,7 @@ from urllib import response as rs, request as rq
 from flask_testing import LiveServerTestCase
 from run import create_app
 import model
-from model import db
+from model import db, redis_cache
 import json
 from config import TestingConfig
 
@@ -21,6 +21,7 @@ class TestFoodCase(LiveServerTestCase):
         self.client = self.app.test_client()
         with self.app.app_context():
             db.init_app(self.app)
+            redis_cache.init_app(self.app)
             db.create_all()
             db.session.commit()
         return self.app

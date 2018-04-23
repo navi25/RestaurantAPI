@@ -10,3 +10,4 @@ psycopg2==2.7.3.2
 flask-restplus==0.9.2
 nose
 Flask-Testing
+flask-redis

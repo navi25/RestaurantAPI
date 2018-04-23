@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-#env/
+env/
 build/
 develop-eggs/
 dist/
@@ -83,9 +83,9 @@ celerybeat-schedule
 .env
 
 # virtualenv
-#.venv
-#venv/
-#ENV/
+.venv
+venv/
+ENV/
 
 # Spyder project settings
 .spyderproject
