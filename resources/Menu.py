@@ -21,7 +21,7 @@ class MenuResource(Resource):
             return {"status": "error", "data": errors}, 422
         restaurant_id = RestaurantModel.query.filter_by(id=data['restaurant_id']).first()
         if not restaurant_id:
-            return {'status': 'error', 'message': 'food Restaurant not found'}, 400
+            return {'status': 'error', 'message': 'Menu Restaurant not found'}, 400
         menu = MenuModel(
             restaurant_id=json_data['restaurant_id'],
             name=json_data['name']

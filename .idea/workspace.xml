@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ebcf725-7f02-4467-9042-f99b961e63c2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.py" afterPath="$PROJECT_DIR$/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/Restaurant.py" afterPath="$PROJECT_DIR$/resources/Restaurant.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/Menu.py" afterPath="$PROJECT_DIR$/resources/Menu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/FoodTest.py" afterPath="$PROJECT_DIR$/tests/FoodTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/MenuTest.py" afterPath="$PROJECT_DIR$/tests/MenuTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/RestaurantTest.py" afterPath="$PROJECT_DIR$/tests/RestaurantTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/basic_test.py" afterPath="$PROJECT_DIR$/tests/basic_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,21 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/Menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="229">
+              <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -81,18 +67,18 @@
       <file leaf-file-name="basic_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/basic_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="376">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="28" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestaurantTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestaurantTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/RestaurantTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+            <state relative-caret-position="259">
+              <caret line="52" column="55" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="52" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -101,8 +87,8 @@
       <file leaf-file-name="MenuTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/MenuTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="30" column="25" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="-331">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -111,8 +97,18 @@
       <file leaf-file-name="FoodTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/FoodTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="224">
+              <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestAll.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/TestAll.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -122,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1782#1843#0" expanded="false" />
@@ -167,7 +163,6 @@
         <option value="$PROJECT_DIR$/templates/availableApp.html" />
         <option value="$PROJECT_DIR$/resources/Food.py" />
         <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/resources/Menu.py" />
         <option value="$PROJECT_DIR$/docs/README.rst" />
         <option value="$PROJECT_DIR$/index.rst" />
         <option value="$PROJECT_DIR$/app.py" />
@@ -184,13 +179,15 @@
         <option value="$PROJECT_DIR$/tests/basic.py" />
         <option value="$PROJECT_DIR$/failed-tests/flask-test.py" />
         <option value="$PROJECT_DIR$/failed-tests/t.py" />
-        <option value="$PROJECT_DIR$/tests/basic_test.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/tests/MenuTest.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/tests/FoodTest.py" />
         <option value="$PROJECT_DIR$/resources/Restaurant.py" />
         <option value="$PROJECT_DIR$/tests/RestaurantTest.py" />
+        <option value="$PROJECT_DIR$/tests/basic_test.py" />
+        <option value="$PROJECT_DIR$/resources/Menu.py" />
+        <option value="$PROJECT_DIR$/tests/MenuTest.py" />
+        <option value="$PROJECT_DIR$/tests/FoodTest.py" />
+        <option value="$PROJECT_DIR$/tests/TestAll.py" />
       </list>
     </option>
   </component>
@@ -250,13 +247,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/run" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/run" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,8 +268,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for RestaurantTest.TestRestaurantCase">
-    <configuration name="Unittests for RestaurantTest.TestRestaurantCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.TestAll">
+    <configuration name="TestAll" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RestaurantAPI" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/TestAll.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Unittests for FoodTest.TestFoodCase.test_endPoint" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -283,10 +297,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RestaurantAPI" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;RestaurantTest.TestRestaurantCase&quot;" />
+      <option name="_new_target" value="&quot;FoodTest.TestFoodCase.test_endPoint&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for RestaurantTest.TestRestaurantCase.test_post_restaurant" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -297,10 +311,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RestaurantAPI" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;RestaurantTest.TestRestaurantCase.test_post_restaurant&quot;" />
+      <option name="_new_target" value="&quot;FoodTest.TestFoodCase.test_post_food&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for RestaurantTest.TestRestaurantCase.test_restaurant_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for MenuTest.TestMenuCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -311,22 +325,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RestaurantAPI" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;RestaurantTest.TestRestaurantCase.test_restaurant_data&quot;" />
+      <option name="_new_target" value="&quot;MenuTest.TestMenuCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests in FoodTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RestaurantAPI" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/FoodTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unittests in MenuTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,19 +343,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase.test_post_restaurant" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in MenuTest.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in FoodTest.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase.test_restaurant_data" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for MenuTest.TestMenuCase" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for FoodTest.TestFoodCase.test_post_food" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in MenuTest.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for FoodTest.TestFoodCase.test_endPoint" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestAll" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase.test_restaurant_data" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in FoodTest.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestAll" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for MenuTest.TestMenuCase" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for FoodTest.TestFoodCase.test_endPoint" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in MenuTest.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for RestaurantTest.TestRestaurantCase.test_post_restaurant" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for FoodTest.TestFoodCase.test_post_food" />
       </list>
     </recent_temporary>
   </component>
@@ -363,35 +363,35 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 46m 34s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_endPoint - 2018.04.22 at 18h 10m 52s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_endPoint" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 48m 19s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_endPoint - 2018.04.22 at 18h 10m 59s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_endPoint" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 49m 30s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_post_food - 2018.04.22 at 18h 06m 40s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 50m 20s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_post_food - 2018.04.22 at 18h 07m 56s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 51m 03s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_post_food - 2018.04.22 at 18h 08m 56s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 52m 57s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_post_food - 2018.04.22 at 18h 09m 21s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 53m 50s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_FoodTest_TestFoodCase_test_post_food - 2018.04.22 at 18h 09m 30s.xml">
+      <configuration name="Unittests for FoodTest.TestFoodCase.test_post_food" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 55m 16s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_for_MenuTest_TestMenuCase - 2018.04.22 at 18h 11m 16s.xml">
+      <configuration name="Unittests for MenuTest.TestMenuCase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 57m 12s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_in_MenuTest_py - 2018.04.22 at 18h 09m 51s.xml">
+      <configuration name="Unittests in MenuTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_RestaurantTest_TestRestaurantCase - 2018.04.22 at 17h 58m 13s.xml">
-      <configuration name="Unittests for RestaurantTest.TestRestaurantCase" configurationId="tests" />
+    <history-entry file="Unittests_in_MenuTest_py - 2018.04.22 at 18h 10m 43s.xml">
+      <configuration name="Unittests in MenuTest.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -432,14 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/endpoints/Restaurant.py" />
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,27 +636,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MenuTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="30" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/alembic.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/alembic.ini" />
     <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,24 +656,6 @@
         <state relative-caret-position="179">
           <caret line="916" column="8" lean-forward="false" selection-start-line="916" selection-start-column="8" selection-end-line="916" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/basic_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/Menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,7 +670,7 @@
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1782#1843#0" expanded="false" />
@@ -729,14 +686,6 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/FoodTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,10 +709,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/basic_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="28" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/RestaurantTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        <state relative-caret-position="259">
+          <caret line="52" column="55" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="52" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/FoodTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MenuTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestAll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
