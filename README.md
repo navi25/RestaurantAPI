@@ -9,6 +9,8 @@ and other additional packages describe below in Tech Stack Section.
 
 Github link for the project - <https://github.com/navi25/RestaurantAPI>
 
+Also checkout <https://github.com/navi25/GoColumbus> for the implementation of same project using Go Language.
+
 Installation
 ------------
 
