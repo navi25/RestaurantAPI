@@ -146,7 +146,7 @@ Tech stack
 -   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to optimize relational
 database by improving Read by caching data efficiently.
 -   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
-    to easliy used Redis with Python and Flask easily.
+    to use Redis with Python and Flask easily.
 
 Development Thought process
 ---------------------------
