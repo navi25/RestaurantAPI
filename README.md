@@ -143,7 +143,7 @@ Tech stack
 -   [Marshmallow-sqlalchemy](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/) - This adds additional features to marshmallow.
 -   [Sqlite3](https://www.sqlite.org/index.html) - Database for the
     project. It comes built in with python.
--   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to oprimize relational
+-   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to optimize relational
 database by improving Read by caching data efficiently.
 -   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
     to easliy used Redis with Python and Flask easily.
